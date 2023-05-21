@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      fieldset {
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <h1>Tell us who you are in order to play !</h1>
+      <fieldset>
+        <legend>User Info:</legend>
+        <form action="" id="myform">
+          <label for="name">Name: </label>
+          <input type="text" placeholder="Name" id="name" required />
+          <br />
+          <br />
+          <label for="email">Email: </label>
+          <input type="email" placeholder="Email" id="email" required />
+          <button type="submit">Submit</button>
+        </form>
+      </fieldset>
+      <h2>Roll The Dice ! Guess the sum of the dice ( from 2-12 )</h2>
+      <label id="input">Guess the Sum</label>
+      <input type="number" id="guessinput" min="2" max="12" required />
+      <br />
+      <br />
+      <button id="guessbutton" disabled value="rollDice">Roll</button>
+      <p>Attemps Remaining:<span id="attemptsnumber"></span></p>
+
+      <p>First Die: <img id="Die1" /></p>
+
+      <p>Second Die: <img id="Die2" /></p>
+
+      <h3 id="displayresult"></h3>
+      <script src="DiceRollGame.js"></script>
+    </body>
+  </body>
+</html>
